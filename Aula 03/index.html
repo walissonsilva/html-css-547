@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <!-- Barra de navegação -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Home</h1>
+
+    <section>
+      <h2>Barra de Navegação</h2>
+      <p>Nesta aula vimos sobre como estruturar uma barra de navegação.</p>
+    </section>
+
+    <section id="tables">
+      <h2>Tabelas</h2>
+      <h3>Tabela de Alunos</h3>
+      <table border="1">
+        <!-- Cabeçalho da tabela -->
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Curso</th>
+            <th>Módulo</th>
+          </tr>
+        </thead>
+
+        <!-- Corpo/Conteúdo da tabela -->
+        <tbody>
+          <tr>
+            <td>Arthur</td>
+            <td>arthur@gmail.com</td>
+            <td>Pi Web Full-Stack</td>
+            <td>HTML & CSS</td>
+          </tr>
+
+          <tr>
+            <td>Ayrton</td>
+            <td>ayrton@gmail.com</td>
+            <td>Pi Web Full-Stack</td>
+            <td>HTML & CSS</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Primeira mesclagem</td>
+            <td colspan="2">Segunda mesclagem</td>
+          </tr>
+
+          <tr>
+            <td>...</td>
+            <td  rowspan="2"></td>
+            <td></td>
+            <td>...</td>
+          </tr>
+
+          <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Exercício -->
+      <h3>Tabela de Exercício</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="2">Funcionalidades em Páginas HTML</th>
+          </tr>
+          <tr>
+            <th>Funcionalidade</th>
+            <th>Tags</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="5">Barra de navegação</td>
+            <td>header</td>
+          </tr>
+          <tr>
+            <td>nav</td>
+          </tr>
+          <tr>
+            <td>ul</td>
+          </tr>
+          <tr>
+            <td>li</td>
+          </tr>
+          <tr>
+            <td>a</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="figures">
+      <figure>
+        <img width="15%" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="Logo do HTML">
+        <figcaption>Logotipo do HTML 5</figcaption>
+      </figure>
+    </section>
+
+    <section id="forms-section">
+      <h2>Formulários</h2>
+
+      <form>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" placeholder="Seu nome" id="nome" name="nome" value="Walisson">
+        </div>
+        <div>
+          <input type="number" name="idade">
+        </div>
+        <div>
+          <input type="password">
+        </div>
+        <div>
+          <input type="date">
+        </div>
+        <div>
+          <input type="time">
+        </div>
+        <div>
+          <input type="email">
+        </div>
+        <div>
+          <input type="hidden">
+        </div>
+        <div>
+          <label for="programador">Programador:</label>
+          <input type="checkbox" id="programador" checked>
+        </div>
+        <div>
+          <input type="range" min="0" max="100" value="10">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <br>
+
+  <footer>
+    Copyright&copy; 2020
+  </footer>
+</body>
+</html>
