@@ -120,35 +120,91 @@
     <section id="forms-section">
       <h2>Formulários</h2>
 
-      <form>
-        <div>
+      <form method="GET" action="sobre.html">
+        <div class="form-input">
           <label for="nome">Nome:</label>
           <input type="text" placeholder="Seu nome" id="nome" name="nome" value="Walisson">
         </div>
-        <div>
+        <div class="form-input">
           <input type="number" name="idade">
         </div>
-        <div>
+        <div class="form-input">
           <input type="password">
         </div>
-        <div>
+        <div class="form-input">
           <input type="date">
         </div>
-        <div>
+        <div class="form-input">
           <input type="time">
         </div>
-        <div>
+        <div class="form-input">
           <input type="email">
         </div>
-        <div>
+        <div class="form-input">
           <input type="hidden">
         </div>
-        <div>
+        <div class="form-input">
           <label for="programador">Programador:</label>
           <input type="checkbox" id="programador" checked>
         </div>
-        <div>
+        <div class="form-input">
           <input type="range" min="0" max="100" value="10">
+        </div>
+        <div>
+          <label for="arquivo">File:</label>
+          <input type="file" id="arquivo">
+        </div>
+        <div>
+          <label for="url">URL:</label>
+          <input type="url" pattern="https://" id="url">
+        </div>
+        <div>
+          <input type="radio" id="masculino">
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" id="feminino">
+          <label for="feminino">Feminino</label>
+        </div>
+
+        <div>
+          <input type="submit" value="Enviar">
+        </div>
+
+        <div>
+          <label for="cor">Cor:</label>
+          <input type="color" id="cor">
+        </div>
+
+        <div>
+          <input type="reset">
+        </div>
+
+        <select id="select">
+          <option value="0" disabled selected>Selecione uma opção...</option>
+          <optgroup label="Web">
+            <option value="1">Pi Web Full-Stack</option>
+            <option value="4">Web Front-End & React</option>
+          </optgroup>
+          <optgroup label="Python">
+            <option value="2">Pi Data Science</option>
+            <option value="3">Python Pro</option>
+            <option value="5">Python for Finance</option>
+          </optgroup>
+        </select>
+
+        <div>
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        </div>
+
+        <div>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </div>
       </form>
     </section>
