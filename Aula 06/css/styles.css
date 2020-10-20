@@ -4,18 +4,17 @@ html, body {
 
 #main-content {
   width: 70%;
-  /* margin: 0 15% 0 15%; */
   margin: 100px 5%;
   padding: 2rem 4rem;
   background-color: gray;
   box-sizing: border-box;
-  border-radius: 1rem;
-  border-right: 12px solid black;
+  border: 2px solid transparent;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 #main-content:hover {
-  box-shadow: none;
+  border: 2px solid black;
+  transition: all 2s;
 }
 
 #main-content > h1 {
@@ -32,7 +31,8 @@ p {
 }
 
 p:hover {
-  color: red;
+  /* transform: scale(0.95, 0.95); */
+  transform: translate(5px, 5px);
 }
 
 span {
@@ -57,12 +57,4 @@ span {
   height: 100px;
   background-color: red;
   margin: 10px 0;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-weight-900 {
-  font-weight: 900;
 }
