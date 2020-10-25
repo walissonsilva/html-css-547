@@ -1,0 +1,39 @@
+.caixa1 {
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-weight: 700;
+  background-color: red;
+}
+
+.caixa2 {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-weight: 700;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  line-height: 200px;
+}
+
+.caixa3 {
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-weight: 700;
+  background-color: green;
+}
+
+.whatsapp {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}

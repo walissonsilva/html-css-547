@@ -1,0 +1,24 @@
+.caixa {
+  height: 100px;
+  width: 30%;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  line-height: 100px;
+}
+
+.caixa1 {
+  background-color: red;
+}
+
+.caixa2 {
+  background-color: blue;
+  position: relative;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 0 auto;
+}
+
+.caixa3 {
+  background-color: green;
+}

@@ -69,7 +69,7 @@ body {
   font-weight: 700;
   border: 4px solid navy;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-  transition: 1s;
+  transition: transform 2s, box-shadow 2s;
 }
 
 #main-content .texto .btn-mais:hover {
@@ -79,13 +79,15 @@ body {
   cursor: text; */
   transform: translate(5px, 5px);
   box-shadow: none;
-  transition: 1s;
+  transition: 2s;
 }
 
+/* TABELA */
 #main-content .texto .table {
   width: 100%;
   margin: 1.4rem 0;
   border: none;
+  border-collapse: collapse;
 }
 
 #main-content .texto .table thead tr {
@@ -93,6 +95,38 @@ body {
   color: white;
 }
 
-#main-content .texto .table thead tr th {
+/* CONFIGURAÇÃO DAS CÉLULAS */
+#main-content .texto .table thead tr th,
+#main-content .texto .table tbody tr td {
   padding: 0.4rem 0;
+  text-align: center;
+  width: 20%;
 }
+
+.table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.table tbody tr td span {
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 6px;
+}
+
+.table tbody tr td span.green {
+  background-color: green;
+}
+
+.table tbody tr td span.red {
+  background-color: red;
+}
+
+/* .table .impar {
+  background-color: #f5f5f5;
+}
+
+.table .par {
+  background-color: rgba(0, 0, 255, 0.1);
+} */
