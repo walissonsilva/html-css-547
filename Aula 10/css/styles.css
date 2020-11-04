@@ -1,0 +1,162 @@
+#header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8rem;
+}
+
+#header .navbar .logo {
+  width: 140px;
+}
+
+#header .navbar .nav-list {
+  list-style: none;
+  display: flex;
+}
+
+#header .navbar .nav-list .nav-link {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #777;
+}
+
+#header .navbar .nav-toggle {
+  display: none;
+}
+
+#header .navbar .nav-list .nav-link.active {
+  color: black;
+  font-weight: 700;
+}
+
+#header .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 8rem;
+  width: 100%;
+}
+
+#header .banner .content {
+  width: 40%;
+}
+
+#header .banner .content h1 {
+  font-size: 2.5rem;
+}
+
+#header .banner .content h4 {
+  margin-top: 1.4rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+#header .banner .content button {
+  border: none;
+  width: 180px;
+  height: 40px;
+  background-color: #458FF6;
+  color: white;
+  font-weight: 700;
+  margin-top: 1.4rem;
+  border-radius: 4rem;
+  font-size: 1rem;
+}
+
+#header .banner .header-image {
+  width: 50%;
+}
+
+#header .banner .header-image img {
+  width: 100%;
+}
+
+#footer {
+  background: linear-gradient(to bottom right, #67C3F3, #5A98F2);
+  display: flex;
+  padding: 5% 5% 5% 10%;
+  color: white;
+}
+
+#footer .brand {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+#footer .brand h2 {
+  margin-bottom: 1rem;
+}
+
+#footer .brand p {
+  margin-bottom: 2rem;
+}
+
+#footer .column h4 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#footer .sitemap {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer .sitemap ul {
+  list-style: none;
+}
+
+#footer .sitemap ul li {
+  margin-bottom: 0.4rem;
+}
+
+#footer .sitemap ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* Breakpoint: 768px */
+@media (max-width: 768px) {
+  #header .navbar {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  #header .navbar .logo {
+    width: 120px;
+  }
+
+  #header .navbar .nav-list {
+    display: none;
+  }
+
+  #header .navbar .nav-toggle {
+    display: block;
+    font-size: 1.3rem;
+    color: #777;
+  }
+  
+  #header .banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  #header .banner .content {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  #header .banner .content button {
+    width: 100%;
+  }
+
+  #header .banner .header-image {
+    width: 100%;
+  }
+}
